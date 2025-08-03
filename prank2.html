@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>System Alert</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      background: black;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .warning-box {
+      text-align: center;
+      color: red;
+      animation: flash 1s infinite;
+    }
+
+    .warning-box h1 {
+      font-size: 3em;
+      margin: 0.5em 0;
+    }
+
+    .warning-box p {
+      font-size: 1.5em;
+    }
+
+    @keyframes flash {
+      0%, 100% { color: red; background: black; }
+      50% { color: black; background: red; }
+    }
+  </style>
+</head>
+<body>
+  <div class="warning-box">
+    <h1>⚠️ YOUR DEVICE HAS BEEN HACKED ⚠️</h1>
+    <p>ALL FILES ARE NOW UNDER CONTROL.</p>
+    <p>CONTACT SYSTEM ADMIN IMMEDIATELY!</p>
+  </div>
+</body>
+</html>
+
